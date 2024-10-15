@@ -1,3 +1,4 @@
+// document html initial est chargé & analysé 
 window.addEventListener("DOMContentLoaded", (event) => {
     let is_run    = "true";
 
