@@ -1,44 +1,44 @@
 html,
 body {
-  margin: 0; /* Supprime la marge par défaut du navigateur */
-  padding: 0; /* Supprime le padding par défaut du navigateur */
-  font-family: "Aldrich", serif; /* Définit la police de caractère Aldrich pour tout le document */
-  font-size: 12px; /* Définit une taille de police de base à 12px */
-  height: 100%; /* Assure que la hauteur des éléments html et body est de 100% de la fenêtre */
-  color: #f0f1d5; /* Définit la couleur du texte (un blanc cassé) */
-  background-color: transparent; /* Définit un fond transparent pour la page */
+    margin: 0; /* Supprime la marge par défaut du navigateur */
+    padding: 0; /* Supprime le padding par défaut du navigateur */
+    font-family: "Aldrich", serif; /* Définit la police de caractère Aldrich pour tout le document */
+    font-size: 12px; /* Définit une taille de police de base à 12px */
+    height: 100%; /* Assure que la hauteur des éléments html et body est de 100% de la fenêtre */
+    color: #f0f1d5; /* Définit la couleur du texte (un blanc cassé) */
+    background-color: transparent; /* Définit un fond transparent pour la page */
 }
-#wrappr {
-  display: flex; /* Utilise Flexbox pour agencer les éléments */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  height: 100%; /* L'élément prend 100% de la hauteur de l'écran */
+#wrapper {
+    display: flex; /* Utilise Flexbox pour agencer les éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 100%; /* L'élément prend 100% de la hauteur de l'écran */
 }
 .inside {
-  font-weight: bold; /* Rend le texte en gras */
-  font-size: 75px; /* Définit une taille de police de 75 px (grand) pour cet élément */
+    font-weight: bold; /* Rend le texte en gras */
+    font-size: 75px; /* Définit une taille de police de 75 px (grand) pour cet élément */
 }
 .timer span::after {
-  content: " : "; /* Ajoute un deux-points après chaque élément <span> à l'intérieur de .timer */
+    content: " : "; /* Ajoute un deux-points après chaque élément <span> à l'intérieur de .timer */
 }
 .timer span:last-child::after {
-  content: ""; /* Supprime les deux-points après le dernier <span> */
+    content: ""; /* Supprime les deux-points après le dernier <span> */
 }
 .controls {
-  text-align: center; /* Centre le texte et les boutons à l'intérieur de cet élément */
+    text-align: center; /* Centre le texte et les boutons à l'intérieur de cet élément */
 }
 .controls button {
-  box-sizing: border-box; /* Inclut la taille des bordures dans la taille totale de l'élément */
-  height: 74px; /* Définit la hauteur du bouton à 74px */
-  background-color: transparent; /* Fond transparent pour le bouton */
-  border-color: transparent transparent transparent #f0f1d5; /* Bord gauche de couleur, les autres côtés sont transparents */
-  transition: 100ms all ease; /* Transition douce de 100ms pour les changements de style */
-  will-change: border-width; /* Optimise les performances pour les animations du changement de bordure */
-  cursor: pointer; /* Change le curseur en pointeur lorsqu'il survole le bouton */
-  border-style: solid; /* Applique un style de bordure ligne droite continue */
-  border-width: 37px 0 37px 60px; /* Définit la taille des bordures : gauche 60px (épaisse), haut et bas de 37px, droite à 0 */
+    box-sizing: border-box; /* Inclut la taille des bordures dans la taille totale de l'élément */
+    height: 74px; /* Définit la hauteur du bouton à 74px */
+    background-color: transparent; /* Fond transparent pour le bouton */
+    border-color: transparent transparent transparent #f0f1d5; /* Bord gauche de couleur, les autres côtés sont transparents */
+    transition: 100ms all ease; /* Transition douce de 100ms pour les changements de style */
+    will-change: border-width; /* Optimise les performances pour les animations du changement de bordure */
+    cursor: pointer; /* Change le curseur en pointeur lorsqu'il survole le bouton */
+    border-style: solid; /* Applique un style de bordure ligne droite continue */
+    border-width: 37px 0 37px 60px; /* Définit la taille des bordures : gauche 60px (épaisse), haut et bas de 37px, droite à 0 */
 }
 .controls .pause {
-  border-style: double; /* Deux lignes droites sont affichées dont la somme des épaisseurs correspond à la valeur fournie par border-width
-border-width: 0px 0 0px 60px;/* Spécifie les bordures gauche à 60px, haut et bas à 0 */
+    border-style: double; /* Deux lignes droites sont affichées dont la somme des épaisseurs correspond à la valeur fournie par border-width*/
+    border-width: 0px 0 0px 60px;/* Spécifie les bordures gauche à 60px, haut et bas à 0 */
 }
