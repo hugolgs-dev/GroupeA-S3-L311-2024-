@@ -26,6 +26,7 @@ body {
 }
 .controls {
     text-align: center; /* Centre le texte et les boutons à l'intérieur de cet élément */
+    
 }
 .controls button {
     box-sizing: border-box; /* Inclut la taille des bordures dans la taille totale de l'élément */
@@ -42,3 +43,6 @@ body {
     border-style: double; /* Deux lignes droites sont affichées dont la somme des épaisseurs correspond à la valeur fournie par border-width*/
     border-width: 0px 0 0px 60px;/* Spécifie les bordures gauche à 60px, haut et bas à 0 */
 }
+
+/* Pour cacher le "pause" dans la balise button sans modifier le html */
+.controls span { display: none;}
